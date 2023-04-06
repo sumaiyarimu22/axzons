@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top-nav-bg {
+  background-color: rgb(247, 245, 236);
+}
+.top-nav span {
+  color: #4d148c;
+}
+.phone {
+  font-size: 1.7rem;
+}
+.social-icons a i {
+  font-size: 16px;
+  color: #4d148c;
+  width: 14px;
+}
+.navbar-brand img {
+  height: 4rem;
+}
+.navbar-collapse {
+  justify-content: end;
+  display: flex;
+}
+.section-1 {
+  background-image: url("images/Home-page-cdpap-banner-1.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+.section-1 h1 {
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.section-1 span {
+  color: #01cb01;
+}
+.nav-item a:hover {
+  color: #01cb01;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+.box {
+  border: 1px solid #01cb01;
+  width: 16rem;
+  height: 3rem;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 1.8rem 0;
+  font-weight: bold;
+}
+.box:hover {
+  background-color: #01cb01;
+}
+.box a {
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.box a i {
+  color: #fff;
+  list-style: none;
+  font-weight: 400;
+}
+
+.box a span {
+  color: #fff;
+  margin-left: 5px;
+}
+.box:hover a span,
+.box:hover a i {
+  color: black;
+}
+.titles p {
+  font-size: 24px !important;
+  line-height: 1 !important;
+  letter-spacing: 0;
+  font-family: Roboto, sans-serif !important;
+}
+.titles {
+  background-color: #01cb01a1;
+}
+
+@media only screen and (max-width: 600px) {
+  .titles p {
+    font-size: 0.8rem !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .titles p {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .titles p {
+    font-size: 1.1rem !important;
+  }
+  .navbar-collapse {
+    position: absolute;
+    z-index: 9;
+    top: 65px;
+    background: #fff;
+    width: 100%;
+    padding: 15px;
+  }
+  .navbar-nav {
+    gap: 0 !important;
+    align-items: self-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
